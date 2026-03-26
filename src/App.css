@@ -1,0 +1,124 @@
+/* 🌌 Background Animation */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #2c003e, #5a0f5a, #1a001f, #3a0a4a);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+}
+
+/* 🎨 Gradient Animation Keyframes */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 👑 Title Glow */
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px gold; }
+  to { text-shadow: 0 0 20px gold, 0 0 30px gold; }
+}
+
+/* 📦 Container Card Style */
+.container {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in;
+}
+
+/* ✨ Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔍 Input Styling */
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px gold;
+}
+
+/* 🔘 Buttons */
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  background: linear-gradient(45deg, gold, orange);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Animation */
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px gold;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(58, 10, 74, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Header */
+th {
+  background: linear-gradient(45deg, gold, orange);
+  color: black;
+  text-transform: uppercase;
+}
+
+/* Cells */
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid gold;
+  text-align: left;
+}
+
+/* Row Hover Animation */
+tr {
+  transition: 0.3s;
+}
+
+tr:hover {
+  background-color: #5a0f5a;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px purple;
+}
+
+/* ✨ Loader Animation */
+h2 {
+  text-align: center;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
